@@ -17,9 +17,10 @@
 
                       ↓
           Odczyt rankingu przez API
-Strona WWW             Urządzenie rankingowe
-Ranking online        ESP32 + micro:bit / ekran OLED
-
+Strona WWW          
+Ranking online
+Urządzenie rankingowe
+ESP32 + micro:bit / ekran OLED
 
 | Element | Technologia | Rola i uzasadnienie |
 |---|---|---|
