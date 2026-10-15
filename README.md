@@ -21,13 +21,13 @@ Strona WWW             Urządzenie rankingowe
 Ranking online        ESP32 + micro:bit / ekran OLED
 
 
-Element	              Technologia	                                           Rola i uzasadnienie
-Gra	              micro:bit + MicroPython 	      Obsługa przycisków, czujników, mechaniki gry i obliczanie wyniku. Proste programowanie.
-Komunikacja	      ESP32 + UART + Wi-Fi	          micro:bit nie ma natywnego Wi-Fi. ESP32 zapewnia połączenie z Internetem.
-Protokół	        HTTPS + REST API (JSON)	        Prosty, powszechnie wspierany sposób przesyłania wyników i pobierania rankingu.
-Backend	          Python + FastAPI	              Przyjmuje wyniki, waliduje dane, udostępnia ranking. Lekki framework z automatyczną dokumentacją API. 
-
-Baza danych	      PostgreSQL	 		                Trwałe przechowywanie graczy i wyników. Łatwe sortowanie, filtrowanie i generowanie rankingów.
-Frontend	        React + Vite			              Responsywna strona pokazująca ranking i statystyki graczy.
-Ranking fizyczn   ESP32 + OLED			              Wyświetlanie TOP 10 wyników pobieranych z API. Większa czytelność niż matryca LED micro:bita.
-Hosting 	        VPS + Docker Compose		        Uruchomienie backendu, bazy i frontendu w kontenerach. Tanie i łatwe we wdrożeniu.
+| Element | Technologia | Rola i uzasadnienie |
+|---|---|---|
+| Gra | **BBC micro:bit + MicroPython** | Obsługa przycisków, czujników, mechaniki gry i obliczanie wyniku; proste programowanie. |
+| Łączność | **ESP32 + UART + Wi-Fi** | micro:bit nie ma natywnego Wi-Fi; ESP32 umożliwia transmisję danych przez Internet. |
+| Protokół | **HTTPS + REST API (JSON)** | Standardowy, prosty sposób przesyłania wyników i pobierania rankingu. |
+| Backend | **Python + FastAPI** | Obsługa API, walidacja wyników i udostępnianie rankingu; automatyczna dokumentacja API. |
+| Baza danych | **PostgreSQL** | Trwałe przechowywanie graczy i historii rozgrywek; łatwe sortowanie i filtrowanie wyników. |
+| Frontend | **React + Vite** | Responsywna strona z rankingiem i statystykami graczy. |
+| Ranking fizyczny | **ESP32 + OLED** | Wyświetlanie TOP 10 pobieranego z API; czytelniejszy ekran niż matryca LED micro:bita. |
+| Hosting | **VPS + Docker Compose** | Wspólne uruchamianie usług w kontenerach; stosunkowo tanie i proste wdrożenie. |
